@@ -1,0 +1,68 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Environment Variables & Secrets
+.env
+.env.*
+*.pem
+*.key
+*.token
+
+# Local Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Backups and Editor Swap Files
+*.bak
+*.backup
+*~
+*.swp
+*.swo
+*.orig
+
+# Editor & IDE Metadata
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Embedded Build Artifacts & Binaries
+build/
+dist/
+*.hex
+*.elf
+*.bin
+*.map
+*.lst
+*.o
+
+# EDA & Simulation Temporary Files
+*.raw
+*.log
+*.tmp
+*-save.kicad_pcb
+*-save.kicad_sch
+*.kicad_prl
+_autosave-*
+*.lck
+
+# Scratch Directories
+scratch/
+.cache/
+

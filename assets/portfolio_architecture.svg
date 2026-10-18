@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e38" />
+      <stop offset="100%" stop-color="#2a2550" />
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162e3b" />
+      <stop offset="100%" stop-color="#1a424a" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="520" fill="url(#bg)" />
+
+  <text x="480" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="bold" fill="#f8fafc" text-anchor="middle">Power Electronics &amp; Analog Circuit Engineering Portfolio</text>
+  <text x="480" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">Dual Case Studies: Switched-Mode Power Conversion &amp; Precision Waveform Synthesis</text>
+
+  <!-- Case Study 1: Buck Converter -->
+  <g transform="translate(40, 110)">
+    <rect width="420" height="360" rx="12" fill="url(#card1)" stroke="#6366f1" stroke-width="2" filter="url(#shadow)" />
+    <rect x="0" y="0" width="420" height="42" rx="12" fill="#6366f1" />
+    <rect x="0" y="30" width="420" height="12" fill="#6366f1" />
+    <text x="210" y="27" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">CASE STUDY 1: DC-DC BUCK CONVERTER</text>
+
+    <!-- Node 1 -->
+    <rect x="25" y="65" width="370" height="50" rx="6" fill="#0f172a" stroke="#4f46e5" stroke-width="1.5" />
+    <text x="40" y="88" font-family="sans-serif" font-size="13" font-weight="bold" fill="#818cf8">Embedded PWM Generator (Arduino Nano / ATmega328P)</text>
+    <text x="40" y="105" font-family="monospace" font-size="11" fill="#cbd5e1">Timer1 Mode 14 | 50.0 kHz | 50% Fixed Duty Cycle (OC1A)</text>
+
+    <!-- Arrow -->
+    <path d="M 210 115 L 210 135" stroke="#818cf8" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- Node 2 -->
+    <rect x="25" y="140" width="370" height="50" rx="6" fill="#0f172a" stroke="#4f46e5" stroke-width="1.5" />
+    <text x="40" y="163" font-family="sans-serif" font-size="13" font-weight="bold" fill="#818cf8">Opto-Isolated Gate Drive Subsystem (Toshiba TLP350)</text>
+    <text x="40" y="180" font-family="monospace" font-size="11" fill="#cbd5e1">Floating Source Reference | 2.5A Peak Totem-Pole Output</text>
+
+    <!-- Arrow -->
+    <path d="M 210 190 L 210 210" stroke="#818cf8" stroke-width="2" />
+
+    <!-- Node 3 -->
+    <rect x="25" y="215" width="370" height="50" rx="6" fill="#0f172a" stroke="#4f46e5" stroke-width="1.5" />
+    <text x="40" y="238" font-family="sans-serif" font-size="13" font-weight="bold" fill="#818cf8">Power Stage Switching Circuit (Single-Layer PCB)</text>
+    <text x="40" y="255" font-family="monospace" font-size="11" fill="#cbd5e1">IRLZ44N High-Side N-MOS | 1N5819 Schottky | 390uH Choke</text>
+
+    <!-- Arrow -->
+    <path d="M 210 265 L 210 285" stroke="#818cf8" stroke-width="2" />
+
+    <!-- Node 4 -->
+    <rect x="25" y="290" width="370" height="50" rx="6" fill="#0f172a" stroke="#dc2626" stroke-width="1.5" />
+    <text x="40" y="313" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f87171">Output Load &amp; Engineering Audit Finding</text>
+    <text x="40" y="330" font-family="monospace" font-size="11" fill="#fca5a5">Target: 36V->18V, 24W | Missing C1 | Diode Derating Hazard</text>
+  </g>
+
+  <!-- Case Study 2: Function Generator -->
+  <g transform="translate(500, 110)">
+    <rect width="420" height="360" rx="12" fill="url(#card2)" stroke="#06b6d4" stroke-width="2" filter="url(#shadow)" />
+    <rect x="0" y="0" width="420" height="42" rx="12" fill="#0891b2" />
+    <rect x="0" y="30" width="420" height="12" fill="#0891b2" />
+    <text x="210" y="27" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">CASE STUDY 2: ANALOG FUNCTION GENERATOR</text>
+
+    <!-- Node 1 -->
+    <rect x="25" y="65" width="370" height="50" rx="6" fill="#0f172a" stroke="#0891b2" stroke-width="1.5" />
+    <text x="40" y="88" font-family="sans-serif" font-size="13" font-weight="bold" fill="#22d3ee">Regulated Dual Power Supply (+/-12V DC)</text>
+    <text x="40" y="105" font-family="monospace" font-size="11" fill="#cbd5e1">12-0-12 VAC Transformer | 1N4007 Bridge | LM7812 / LM7912</text>
+
+    <!-- Arrow -->
+    <path d="M 210 115 L 210 135" stroke="#22d3ee" stroke-width="2" />
+
+    <!-- Node 2 -->
+    <rect x="25" y="140" width="370" height="50" rx="6" fill="#0f172a" stroke="#0891b2" stroke-width="1.5" />
+    <text x="40" y="163" font-family="sans-serif" font-size="13" font-weight="bold" fill="#22d3ee">Wien Bridge Sine Wave Oscillator (uA741)</text>
+    <text x="40" y="180" font-family="monospace" font-size="11" fill="#cbd5e1">1.441 kHz | Av >= 3 (Barkhausen) | Rail Saturation Limited</text>
+
+    <!-- Arrow -->
+    <path d="M 210 190 L 210 210" stroke="#22d3ee" stroke-width="2" />
+
+    <!-- Node 3 -->
+    <rect x="25" y="215" width="370" height="50" rx="6" fill="#0f172a" stroke="#0891b2" stroke-width="1.5" />
+    <text x="40" y="238" font-family="sans-serif" font-size="13" font-weight="bold" fill="#22d3ee">Comparator &amp; Miller Integrator Pipeline</text>
+    <text x="40" y="255" font-family="monospace" font-size="11" fill="#cbd5e1">Square (21.6Vpp, 0.5V/us SR limit) -> Triangle (5.84Vpp)</text>
+
+    <!-- Arrow -->
+    <path d="M 210 265 L 210 285" stroke="#22d3ee" stroke-width="2" />
+
+    <!-- Node 4 -->
+    <rect x="25" y="290" width="370" height="50" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
+    <text x="40" y="313" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399">Output Buffering &amp; Variable Attenuation</text>
+    <text x="40" y="330" font-family="monospace" font-size="11" fill="#a7f3d0">Dual-Trace Scope Validation | Rigol / Tektronix Laboratory</text>
+  </g>
+</svg>
